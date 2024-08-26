@@ -1,12 +1,33 @@
+body{
+  background-color: #394943;
+}
 header{
-  font-family: "Nanum Myeongjo", serif;
-  font-weight: 400;
+  color:white;
+  font-family: "EB Garamond", serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
   font-style: normal;
-
 }
 h1{
   font-size: 70px;
 }
 h2{
   font-size: 50px;
+}
+.main{
+  margin: 0 auto;
+  max-width: 1150px;
+  padding: 40px;
+}
+ul{
+  list-style: none;
+  display: flex;
+}
+li{
+  margin: 20px;
+  border-radius: 4px;
+  background-color: white;
+  border: 1px solid black;
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+  padding: 10px;
 }
