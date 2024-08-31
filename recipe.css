@@ -1,56 +1,59 @@
 body{
-  background-color: #394549;
+  background-color: #585c5e;
 }
 header{
   color:white;
   font-family: "EB Garamond", serif;
   font-optical-sizing: auto;
   font-weight: 200;
-background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
 url(header-img.jpg);
 background-size: cover;
 background-repeat: no-repeat;
 background-position: center center; 
-padding: 100px 80px 100px 80px; 
+padding: 100px 90px 100px 90px; 
   font-style: normal;
 }
 .title{
- letter-spacing: 2px;
   font-size: 70px;
-
+  
 }
 h2{
-  letter-spacing: 5px;
-
-  font-size: 50px;
+  font-size: 40px;
+  letter-spacing: 4px;
+}
+.recipe-name{
+  font-size: 20px;
 }
 .main{
   margin: 0 auto;
   max-width: 1150px;
   padding: 40px;
 }
-ul{
+.recipe-list{
   list-style: none;
   display: grid;
   grid-template-columns: 2fr 2fr 2fr;
-  grid-gap:10px;
+  margin: 0;
+  padding: 0;
 }
-li{
+.recipe-details{
   margin: 10px;
   border-radius: 4px;
   text-align: center;
   background-color: white;
-  border: 3px solid rgb(49, 49, 49);
+  border: none;
   box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
   padding: 10px;
 }
-a{
+.click{
   text-decoration: none;
   padding: 10px 20px 10px 20px;
   margin-top: 20px;
   background-color:  #db5543;
   border: none;
-  width: 200px;
+  width: 120px;
+  display: block;
   box-shadow: 10px 10px 20px rgba(0,0,0,0.2);
 color: white;
   font-size: 15px;
@@ -62,4 +65,9 @@ color: white;
 }
 .description{
   margin: 40px;
+}
+img{
+  max-width: 200px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
 }
