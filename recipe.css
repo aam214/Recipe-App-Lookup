@@ -85,9 +85,20 @@ img{
   border-radius: 8px;
   box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
 }
+footer{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+url(footer-img.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center; 
+padding: 50px 90px 50px 90px; 
+}
+footer a{
+
+  color: black;
+}
 .grid-2-column-footer{
 display: grid;
 text-align: center;
 grid-template-columns: 2fr 2fr;
-
 }
