@@ -22,6 +22,13 @@ h2{
   font-size: 40px;
   letter-spacing: 4px;
 }
+.directions{
+  margin-left: 10px;
+  margin-top: 20px;
+  color: white;
+  font-family: "EB Garamond", serif;
+  letter-spacing: 4px;
+}
 .recipe-name{
   font-size: 20px;
 }

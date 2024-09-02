@@ -5,39 +5,57 @@ recipeList.innerHTML ="";
 recipes.forEach((recipe) => {
   const recipeDetails = document.createElement("li");
   recipeDetails.classList.add("recipe-details");
-  recipeImage = document.createElement("img");
+  
+  const recipeImage = document.createElement("img");
   recipeImage.src = recipe.image;
   recipeImage.alt = "Recipe picture";
 
-  recipeName = document.createElement("h3");
+  const recipeName = document.createElement("h3");
   recipeName.classList.add("recipe-name");
   recipeName.innerHTML = recipe.title;
 
-  recipeDescription = document.createElement("p");
+  const ingredientShow = document.createElement('div');
+  ingredientShow.classList.add('ingredient-show');
+  //initially hidden
+  ingredientShow.style.display = 'none';
+  
+  
+  const recipeDescription = document.createElement("p");
   recipeDescription.classList.add("description");
   recipeDescription.innerHTML = 
   `<strong>Ingredients:</strong> ${recipe.extendedIngredients.map((ingredient) =>
   ingredient.original).join(" -")}`;
   
-  recipeButton = document.createElement("a");
+ingredientShow.appendChild(recipeDescription);
+
+  const recipeButton = document.createElement("a");
   recipeButton.href = recipe.sourceUrl;
   recipeButton.innerText = "View Recipe";
-    recipeButton.classList.add("click");
+  recipeButton.classList.add("click");
+  recipeButton.target = "_blank"; 
+  recipeButton.rel = "noopener noreferrer";
 
-  
+  recipeDetails.addEventListener('click', () => {
+    if (ingredientShow.style.display === "none") {
+      ingredientShow.style.display = "block";
+    } else {
+      ingredientShow.style.display ="none";
+    }
+  });
+
+
   recipeDetails.appendChild(recipeName);
   recipeDetails.appendChild(recipeImage);  
-  recipeDetails.appendChild(recipeButton)
+  recipeDetails.appendChild(recipeButton);
+  recipeDetails.appendChild(ingredientShow);
   recipeList.appendChild(recipeDetails);
-  recipeDetails.appendChild(recipeDescription);
-
 });
 
 }
 
 async function retrieveRecipes() {
   const retrieved = await fetch(
-    `https://api.spoonacular.com/recipes/random?number=9&apiKey=df8fc39572bb4cc6a7e799c975762126`);
+    `https://api.spoonacular.com/recipes/random?number=9&apiKey=7f883a94fb85461693896f4af2459f57`);
   const data = await retrieved.json();
   return data.recipes;
 }
@@ -49,3 +67,4 @@ async function init() {
 }
 
 init();
+
