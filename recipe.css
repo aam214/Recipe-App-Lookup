@@ -85,3 +85,9 @@ img{
   border-radius: 8px;
   box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
 }
+.grid-2-column-footer{
+display: grid;
+text-align: center;
+grid-template-columns: 2fr 2fr;
+
+}
