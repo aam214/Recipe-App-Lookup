@@ -44,28 +44,35 @@ h2{
   background-color: white;
   border: none;
   box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
-  padding: 10px;
+  padding: 20px;
+}
+.description{
+  margin-top: 28px;
 }
 .click{
   text-decoration: none;
   padding: 10px 20px 10px 20px;
-  margin-top: 20px;
+  margin-top:20px;
+  display: inline-block;
+  text-align: center;
   background-color:  #db5543;
   border: none;
   width: 120px;
-  display: block;
+
   box-shadow: 10px 10px 20px rgba(0,0,0,0.2);
 color: white;
   font-size: 15px;
   text-align: center;
   border-radius: 4px;
 }
+.click:hover{
+  opacity: 0.8;
+  width: 128px;
+}
 .recipe-name{
   padding: 20px;
 }
-.description{
-  margin: 40px;
-}
+
 img{
   max-width: 200px;
   border-radius: 8px;

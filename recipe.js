@@ -1,6 +1,5 @@
 const recipeList = document.getElementById("recipe-list");
 
-
 function recipeView(recipes) {
 recipeList.innerHTML ="";
 recipes.forEach((recipe) => {
@@ -17,7 +16,7 @@ recipes.forEach((recipe) => {
   recipeDescription = document.createElement("p");
   recipeDescription.classList.add("description");
   recipeDescription.innerHTML = 
-  `Ingredients: ${recipe.extendedIngredients.map((ingredient) =>
+  `<strong>Ingredients:</strong> ${recipe.extendedIngredients.map((ingredient) =>
   ingredient.original).join(" -")}`;
   
   recipeButton = document.createElement("a");
