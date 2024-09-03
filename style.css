@@ -87,18 +87,21 @@ img{
 }
 footer{
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-url(footer-img.jpg);
+url(header-img.jpg);
 background-size: cover;
 background-repeat: no-repeat;
-background-position: center; 
-padding: 50px 90px 50px 90px; 
+background-position: top; 
+padding: 80px 90px 80px 90px; 
 }
 footer a{
-
   color: black;
+  font-size: 20px;
+  color: white;
 }
-.grid-2-column-footer{
-display: grid;
+footer{
+font-family: "EB Garamond", serif;
 text-align: center;
-grid-template-columns: 2fr 2fr;
+letter-spacing: 2px;
+color: white;
+font-size: 24px;
 }
