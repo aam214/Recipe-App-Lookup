@@ -42,10 +42,8 @@ ingredientShow.appendChild(recipeDescription);
       ingredientShow.style.display ="none";
     }
   });
-
-
   recipeDetails.appendChild(recipeName);
-  recipeDetails.appendChild(recipeImage);  
+  recipeDetails.appendChild(recipeImage); 
   recipeDetails.appendChild(recipeButton);
   recipeDetails.appendChild(ingredientShow);
   recipeList.appendChild(recipeDetails);
@@ -55,7 +53,7 @@ ingredientShow.appendChild(recipeDescription);
 
 async function retrieveRecipes() {
   const retrieved = await fetch(
-    `https://api.spoonacular.com/recipes/random?number=9&apiKey=7f883a94fb85461693896f4af2459f57`);
+    `https://api.spoonacular.com/recipes/random?number=12&apiKey=7f883a94fb85461693896f4af2459f57`);
   const data = await retrieved.json();
   return data.recipes;
 }
