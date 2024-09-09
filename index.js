@@ -42,9 +42,10 @@ ingredientShow.appendChild(recipeDescription);
       ingredientShow.style.display ="none";
     }
   });
+  recipeDetails.appendChild(recipeButton);
   recipeDetails.appendChild(recipeName);
   recipeDetails.appendChild(recipeImage); 
-  recipeDetails.appendChild(recipeButton);
+  
   recipeDetails.appendChild(ingredientShow);
   recipeList.appendChild(recipeDetails);
 });
