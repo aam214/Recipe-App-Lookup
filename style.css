@@ -1,11 +1,11 @@
 body{
-  background-color: #585c5e;
+  background-color: #536772;
 }
 header{
-  color:white;
-  font-family: "EB Garamond", serif;
-  font-optical-sizing: auto;
-  font-weight: 200;
+color:white;
+font-family: "EB Garamond", serif;
+font-optical-sizing: auto;
+font-weight: 200;
 background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
 url(header-img.jpg);
 background-attachment: fixed;
@@ -13,15 +13,15 @@ background-size: cover;
 background-repeat: no-repeat;
 background-position: center bottom; 
 padding: 100px 90px 100px 90px; 
-  font-style: normal;
+font-style: normal;
 }
 .title{
-  font-size: 70px;
+font-size: 70px;
   
 }
 h2{
-  font-size: 30px;
-  letter-spacing: 4px;
+font-size: 30px;
+letter-spacing: 4px;
 }
 .directions{
  text-align: center;
@@ -64,7 +64,7 @@ h2{
   margin-top: 80px;
   display: inline-block;
   text-align: center;
-  background-color:  #db5543;
+  background-color:  #e69549;
   border: none;
   width: 120px;
   box-shadow: 10px 10px 20px rgba(0,0,0,0.2);
@@ -108,21 +108,31 @@ letter-spacing: 2px;
 color: white;
 font-size: 24px;
 }
-@media(max-width:780px){
+@media(max-width:800px){
+  .main{
+  max-width: 600px;
+  }
 header{
 background-position: left center;
   padding:90px;
-  margin: 0;
 }
 .directions{
   margin: 10px;
+  letter-spacing: 2px;
 }
 .recipe-list{
   display: grid;
-  grid-template-columns: 2fr 2fr;
+  grid-gap:30px;
+  grid-template-columns: 1fr 1fr;
 }
 }
 @media(max-width:600px){
+  .main{
+max-width: 300px;
+margin: 0 auto;
+display: block;
+
+    }
 header{
   margin: 0;
   background-position: left;
@@ -133,15 +143,11 @@ header{
   font-size: 60px;
   letter-spacing: normal;
 }
-.main{
-  max-width: 500px;
-}
 .directions{
   font-size: 19px;
 }
 .recipe-list{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+ grid-template-columns: 3fr;
 }
 .recipe-details{
   padding: 10px;
