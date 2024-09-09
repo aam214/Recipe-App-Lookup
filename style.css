@@ -64,19 +64,19 @@ img{
 }
 .click{
   text-decoration: none;
-  padding: 10px 18px 10px 18px;
+  padding: 7px 12px 7px 12px;
 
   display: inline-block;
   text-align: center;
   background-color:  #e69549;
   border: none;
   width: 120px;
-  box-shadow: 10px 10px 20px rgba(0,0,0,0.2);
+  box-shadow: 8px 8px 10px rgba(0,0,0,0.2);
   color: white;
   font-size: 15px;
   text-align: center;
   align-content: baseline;
-  border-radius: 4px;
+  border-radius: 100px;
 }
 .click:hover{
   opacity: 0.8;
