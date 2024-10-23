@@ -56,6 +56,17 @@ letter-spacing: 4px;
   box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
   padding: 20px;
 }
+#ingredientShow {
+  opacity: 0;
+  visibility: hidden;
+ 
+}
+#ingredientShow.show {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 4s ease, visibility 4s ease;
+}
+
 .description{
   margin-top: 28px;
 }

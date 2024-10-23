@@ -35,13 +35,16 @@ ingredientShow.appendChild(recipeDescription);
   recipeButton.target = "_blank"; 
   recipeButton.rel = "noopener noreferrer";
 
-  recipeDetails.addEventListener('click', () => {
-    if (ingredientShow.style.display === "none") {
-      ingredientShow.style.display = "block";
-    } else {
-      ingredientShow.style.display ="none";
-    }
+  recipeDetails.addEventListener("mouseover", () => {
+    ingredientShow.style.display = "block";
+    ingredientShow.classList.add("show");
   });
+
+  recipeDetails.addEventListener("mouseout", () => {
+    ingredientShow.style.display = "none";
+    ingredientShow.classList.remove("show");
+  });
+
   recipeDetails.appendChild(recipeButton);
   recipeDetails.appendChild(recipeName);
   recipeDetails.appendChild(recipeImage); 
